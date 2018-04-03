@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TickView">
+        <!--没有选中的基调颜色-->
+        <attr name="uncheck_base_color" format="color" />
+        <!--选中后的基调颜色-->
+        <attr name="check_base_color" format="color" />
+        <!--选中后钩的颜色-->
+        <attr name="check_tick_color" format="color" />
+        <!--圆的半径-->
+        <attr name="radius" format="dimension" />
+        <!--动画执行的速度-->
+        <attr name="rate">
+            <enum name="slow" value="0"/>
+            <enum name="normal" value="1"/>
+            <enum name="fast" value="2"/>
+        </attr>
+        <attr name="clickable" format="boolean"/>
+    </declare-styleable>
+
+    <item name="transparent" type="drawable">#00000000</item>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TextLinear">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="leftText" format="string" />
+        <attr name="leftDrawable" format="reference|color" />
+        <attr name="rightText" format="string" />
+        <attr name="rightDrawable" format="boolean" />
+        <attr name="topDriver" format="boolean" />
+        <attr name="leftPadding" format="reference"/>
+        <attr name="bottomDriver" format="boolean" />
+        <attr name="apptextColor" format="color" />
+        <attr name="apptextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AppealTextLiner">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="leftTextAppeal" format="string" />
+        <attr name="rightTextAppeal" format="string" />
+        <attr name="leftColorAppeal" format="reference|color" />
+        <attr name="rightColorAppeal" format="reference|color" />
+    </declare-styleable>
+
+    <!--圆-->
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="ringBgColor" format="color"/>
+    </declare-styleable>
+
+</resources>

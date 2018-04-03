@@ -1,0 +1,125 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Green Oragen Manager</string>
+    <string name="click_optimization">click optimization</string>
+    <string name="clean_rubbish">clean rubbish</string>
+    <string name="save_electricity">save electricity</string>
+    <string name="permission_manager">Permission Manager</string>
+    <string name="traffic_monitoring">traffic monitoring</string>
+    <string name="complete">complete</string>
+    <string name="optimization_complete">Optimization complete</string>
+    <string name="rubbish">rubbish</string>
+    <string name="month_rest">month rest</string>
+    <string name="today_has_been_used">today has been used :</string>
+    <string name="optimization">optimization</string>
+    <string name="on_examination">on examination</string>
+    <string name="in_the_optimization">In the optimization</string>
+    <string name="click_return">Click return</string>
+    <string name="intelligent_power_saving">Power Saving</string>
+    <string name="touch_cleaner">touch cleaner</string>
+    <string name="clean_ram">Mobile \n Acceleration</string>
+    <string name="examination_complete">Examination complete</string>
+    <string name="app_manager">App Manager</string>
+    <string name="home_return">return</string>
+    <string name="check_all">check all</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="without_checked_app">without any checked app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Flow measurement unit -->
+    <string name="traffic_b">b</string>
+    <string name="traffic_kb">kb</string>
+    <string name="traffic_mb">MB</string>
+    <string name="traffic_gb">GB</string>
+    <string name="traffic_tb">T</string>
+    <string name="no_running_services">NO Service</string>
+    <string name="aaa">aaa</string>
+    <string name="bbb">1/2</string>
+    <string name="percent">%</string>
+    <string name="app">wei xin</string>
+    <string name="cc">97</string>
+	<string name="enabled">Enabled</string>
+	<string name="settings">Settings</string>
+	<string name="process_count">%1$d items</string>
+	<string name="close_process">Close the background process</string>
+	<string name="power_save">"Power Save \n   Mode"</string>
+	<string name="permission_ctr">Permission security protection</string>	
+    <string name="running_app"><xliff:g id="count" example="1">%1$d</xliff:g>running applications</string>
+    <string name="switch_error">"Couldn't switch to the process , because it has no interface!"</string>
+    <string name="notify_user_switch_on">For your security, please turn on permission management</string>
+    <string name="permissions_label">Permission</string>
+    <string name="apps">App</string>
+    <string name="loading">Loading, please wait ...</string>
+    <string name="no_permissions">No permissions</string>
+    <string name="app_permissions_group_summary"><xliff:g id="count" example="10">%1$d</xliff:g> of <xliff:g id="count" example="10">%2$d</xliff:g> apps allowed</string>
+    <string name="additional_permissions">Additional permissions</string>
+    <string name="default_permission_description">perform an unknown action</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="location_warning"><xliff:g id="app_name" example="Package Installer">%1$s</xliff:g> is a provider of location services for this device. Location access can be modified from location settings.</string>
+    <string name="ok">OK</string>
+    <plurals name="additional_permissions_more" formatted="false">
+        <item quantity="other"><xliff:g id="count" example="1">%1$d</xliff:g></item>
+        <item quantity="one"><xliff:g id="count" example="2">%1$d</xliff:g> more</item>
+    </plurals>
+    <string name="permission_no">no allow permissions</string>
+    <string name="kill_all_process">push to pass</string>
+	<string name="dura_speed">User Management</string>
+	<string name="freeze_app">Freeze App</string>
+    <string name="app_lock">App Lock</string>
+    <string name="count_runnint_process">0</string>
+    <string name="overlay_manager">Can appear on other applications</string>
+    <string name="no_applications">There are no installed apps that request suspension window permissions</string>
+    <string name="overlay">Floating window</string>
+
+    <string name="optimazation">Optimize</string>
+    <string name="title">Mobile Assistant</string>
+    <string name="akeyoptimazation">Optimization</string>
+    <string name="over">Done</string>
+
+    <string name="ram_released">Memory can be released</string>
+
+    <string name="moresetting">More settings</string>
+    <string name="weight_loss">Garbage \n Cleaning</string>
+    <string name="game_acceleration">Game \n Acceleration</string>
+    <string name="network_scanning">Network \n Scanning</string>
+    <string name="harassment_interception">Harassment \n Interception</string>
+    <string name="red_packet_assistant">Redpacket \n Assistant</string>
+    <string name="parallelSpace">ParallelSpace</string>
+    <string name="whitelist">Autostart</string>
+    <string name="no_white_list_app">No application can be set</string>
+    <string name="lock_task_management">Lock Task Management</string>
+    <string name="locked_task">Locked Task</string>
+    <string name="unlocked_task">Unlocked Task</string>
+    <string name="applock_detail">Lock the application, the privacy of capital is safe</string>
+    <string name="speed_boost">Speed Boost</string>
+    <string name="clear_rubbish">Clear <xliff:g id="rubbish_size">%1$s</xliff:g> MB rubbish </string>
+    <string name="clean_phone">Phone is clean</string>
+    <string name="try_recommend">Try the function recommended below</string>
+    <string name="uninstall_app">App Uninstall</string>
+    <string name="uninstall_app_hint">Unload a long, unused application to save cell phone space</string>
+    <string name="uninstall_app_go">Go to uninstall</string>
+    <string name="clean_ram_new">Mobile Acceleration</string>
+    <string name="speed_mobile">Speeding up the mobile phone</string>
+    <string name="space_available">Available Space</string>
+    <string name="space_total">Total Space</string>
+    <string name="video_manage">Video Management</string>
+    <string name="apk_clear">Installation Package Cleaning</string>
+    <string name="clear_go">Go to clean up</string>
+    <string name="uninstall_app_count">Find <xliff:g id="app_count">%1$d</xliff:g> apps not using for a long time </string>
+    <string name="photo_clean">Photo cleaning</string>
+    <string name="installed">installed</string>
+    <string name="uninstalled">uninstalled</string>
+    <string name="delete_confirm">Delete selected items</string>
+    <string name="no_item_select">Select None</string>
+    <string name="give_permissions">Permissions</string>
+    <string name="app_permission">App Permissions</string>
+    <string name="permission_control">Permissions Controlling</string>
+    <string name="autostart_app_count"> <xliff:g id="auto_count">%1$d</xliff:g> apps can autostart </string>
+    <string name="no_autostart_app_count"><xliff:g id="no_auto_count">%1$d</xliff:g> apps are not allowed to autostart </string>
+    <string name="show_system_app">Show System Apps</string>
+    <string name="hide_system_app">Hide System Apps</string>
+    <string name="autostart_about">About Autostart</string>
+    <string name="autostart_message">Some apps may incorrectly indicate that System has prevented them from starting. Check permissions that have been granted to
+    individual apps in Settings or here.</string>
+    <string name="permission_count"><xliff:g id="permission_count">%1$d</xliff:g> Permissions</string>
+</resources>

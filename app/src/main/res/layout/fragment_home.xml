@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qingcheng.mobilemanager.ui.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@color/primary_dark"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_fragment_home_opt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <View
+                android:id="@+id/short_circular"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circular_short_layout"/>
+            <View
+                android:id="@+id/long_circular"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circular_long_layout"
+                android:visibility="invisible"/>
+            <RelativeLayout
+                android:id="@+id/rl_trans_des"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circular_trans_layout">
+                <com.qingcheng.mobilemanager.widget.RiseNumberTextView
+                    android:id="@+id/tv_home_count"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="75dp"
+                    android:paddingTop="25dp"
+                    android:textColor="@color/whiteSmoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_opt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_home_count"
+                    android:text="@string/on_examination"
+                    android:textColor="@color/whiteSmoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_home_return"
+                    android:text="@string/click_return"
+                    android:textColor="@color/whiteSmoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_below="@id/tv_opt"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <RelativeLayout
+                android:id="@+id/home_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/tab_white_gray_selector"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/home_save_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_power_save"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/tv_home_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/intelligent_power_saving"
+                    android:layout_below="@id/home_save_pic"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/freeze_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/tab_white_gray_selector"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/home_freeze_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_freeze_app"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/tv_freeze_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/freeze_app"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/home_freeze_app"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/home_touch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/tab_white_gray_selector"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/home_touch_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_app_lock"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/tv_home_clean_touch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_lock"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/home_touch_pic"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <RelativeLayout
+                android:id="@+id/home_ram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/tab_white_gray_selector"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/home_ram_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mem_clean"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/tv_home_ram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/clean_ram"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/home_ram_pic"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/dura_speed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/tab_white_gray_selector"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/home_dura_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_permission_manager"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/tv_dura_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dura_speed"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/home_dura_speed"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/home_rights"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/tab_white_gray_selector"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/home_rights_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_app_manager"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/tv_home_rights"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_manager"
+                    android:layout_below="@id/home_rights_pic"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

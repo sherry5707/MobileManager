@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qingcheng.mobilemanager"
+    android:sharedUserId="android.uid.system"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.GRANT_RUNTIME_PERMISSIONS" />
+    <uses-permission android:name="android.permission.REVOKE_RUNTIME_PERMISSIONS" />
+    <uses-permission android:name="android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.READ_INSTALL_SESSIONS" />
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_UID" />
+    <uses-permission android:name="android.permission.MANAGE_APP_OPS_RESTRICTIONS" />
+
+    <uses-permission android:name="com.google.android.permission.INSTALL_WEARABLE_PACKAGES" />
+    <uses-permission android:name="android.permission.BIND_RUNTIME_PERMISSION_PRESENTER_SERVICE"/>
+
+    <!-- Needed for passing extras with intent ACTION_SHOW_ADMIN_SUPPORT_DETAILS -->
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        android:resizeableActivity = "false"
+        android:screenOrientation="portrait"
+        android:persistent="true">
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTask">
+
+        </activity>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.NewHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.OptimizeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme">
+        </activity>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.AppLockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme"/>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.TaskCleanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.SaveEleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.AppManagerActivity"
+            android:theme="@style/BaseAppTheme"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.NewAppManagerActivity"
+            android:theme="@style/BaseAppTheme"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.PermissionControlPageActivity"
+            android:theme="@style/PermissionTheme"
+            android:label="@string/permission_manager" 
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!--wgf-->
+        <activity android:name=".ui.activity.PermissionManagerActivity"
+            android:theme="@style/BaseAppTheme"
+            android:label="@string/permission_manager"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.TaskCleanSetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.PhoneThinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.NewPermissionManagerActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/give_permissions"
+            android:theme="@style/NewPermissionManagerActivityTheme"/>
+
+        <activity android:name="com.qingcheng.mobilemanager.ui.activity.AppUninstallActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/uninstall_app"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

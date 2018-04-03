@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_save_ele"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qingcheng.mobilemanager.ui.activity.SaveEleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:background="@color/TC_green8">
+        <RelativeLayout
+            android:id="@+id/rl_save_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/iv_save_pre"
+                android:src="@mipmap/pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/tv_save_pre"
+                android:layout_toRightOf="@id/iv_save_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/whiteSmoke"
+                android:text="@string/intelligent_power_saving"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/tv_power_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteSmoke"
+                android:text="@string/cc"
+                android:textSize="65dp"/>
+            <TextView
+                android:id="@+id/tv_power_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_power_num"
+                android:paddingTop="10dp"
+                android:text="@string/percent"
+                android:textColor="@color/whiteSmoke"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">優橙管家</string>
+    <string name="click_optimization">點擊優化</string>
+    <string name="clean_rubbish">垃圾清理</string>
+    <string name="save_electricity">省電管理</string>
+    <string name="permission_manager">權限管理</string>
+    <string name="traffic_monitoring">流量監控</string>
+    <string name="complete">完成</string>
+    <string name="optimization_complete">優化完畢</string>
+    <string name="rubbish">垃圾</string>
+    <string name="month_rest">本月剩餘 :</string>
+    <string name="today_has_been_used">今日已用 :</string>
+    <string name="optimization">完成</string>
+    <string name="on_examination">檢查中</string>
+    <string name="in_the_optimization">優化中</string>
+    <string name="click_return">點擊返回</string>
+    <string name="intelligent_power_saving">智能省電</string>
+    <string name="touch_cleaner">一鍵卸載</string>
+    <string name="clean_ram">手機加速</string>
+    <string name="examination_complete">檢查完畢</string>
+    <string name="app_manager">應用管理</string>
+    <string name="home_return">返回</string>
+    <string name="check_all">全選</string>
+    <string name="uninstall">卸載</string>
+    <string name="without_checked_app">沒有選中任何應用</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Flow measurement unit -->
+    <string name="traffic_b">b</string>
+    <string name="traffic_kb">kb</string>
+    <string name="traffic_mb">MB</string>
+    <string name="traffic_gb">GB</string>
+    <string name="traffic_tb">T</string>
+
+	<string name="enabled">已開啟</string>
+	<string name="settings">開啟</string>
+	<string name="process_count">%1$d 個</string>
+	<string name="close_process">關閉後台進程</string>
+	<string name="power_save">智能省電</string>
+	<string name="permission_ctr">權限安全防護</string>
+    <string name="running_app"><xliff:g id="count" example="1">%1$d</xliff:g>個進程正在運行</string>
+    <string name="switch_error">error</string>
+    <string name="notify_user_switch_on">為了您的安全，請打開權限管理</string>
+    <string name="permissions_label">權限</string>
+    <string name="apps">應用</string>
+    <string name="loading">正在加載，請稍等...</string>
+    <string name="no_permissions">沒有權限，請稍等</string>
+    <string name="app_permissions_group_summary">"已授權 <xliff:g id="COUNT_0">%d</xliff:g> 個應用（共 <xliff:g id="COUNT_1">%d</xliff:g> 個）"</string>
+    <string name="additional_permissions">其他權限</string>
+    <string name="default_permission_description">未知操作</string>
+    <string name="location_settings">位置信息设置</string>
+    <string name="location_warning">"“<xliff:g id="APP_NAME">%1$s</xliff:g>”是此設備的一個位置信息提供服務。您可以在位置信息設置中修改位置信息使用權。"</string>
+    <string name="ok">確定</string>
+    <plurals name="additional_permissions_more" formatted="false">
+        <item quantity="other">另外 <xliff:g id="COUNT_1">%1$d</xliff:g> 項</item>
+        <item quantity="one">另外 <xliff:g id="COUNT_0">%1$d</xliff:g> 項</item>
+    </plurals>
+    <string name="permission_no">"未打開任意權限"</string>
+	<string name="kill_all_process">一鍵加速</string>
+	<string name="dura_speed">權限管理</string>
+	<string name="freeze_app">應用冷藏箱</string>
+	<string name="app_lock">應用鎖</string>
+    <string name="overlay">懸浮窗</string>
+    <string name="optimazation">點擊優化</string>
+    <string name="title">手機助手</string>
+
+    <string name="ram_released">內存可釋放</string>
+    <string name="lock_task_management">鎖定任務管理</string>
+    <string name="locked_task">已鎖定任務</string>
+    <string name="unlocked_task">未鎖定任務</string>
+    <string name="speed_boost">速度提升</string>
+    <string name="clear_rubbish">清理 <xliff:g id="rubbish_size">%1$s</xliff:g> MB 垃圾 </string>
+    <string name="clean_phone">手機很幹凈</string>
+    <string name="try_recommend">試試下方推薦的功能吧</string>
+    <string name="uninstall_app">應用卸載</string>
+    <string name="uninstall_app_hint">卸載長時間沒有使用的應用，節省手機空間</string>
+    <string name="uninstall_app_go">前往卸載</string>
+    <string name="clean_ram_new">手機加速</string>
+    <string name="speed_mobile">正在為手機加速</string>
+</resources>

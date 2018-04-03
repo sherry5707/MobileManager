@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tc="http://schemas.android.com/apk/res/com.qingcheng.mobilemanager"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <com.qingcheng.mobilemanager.widget.CircleView
+        android:id="@+id/circle"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        tc:circleColor="@color/white"
+        tc:radius="25dp"
+        tc:ringBgColor="@color/TC_gray3"
+        tc:ringColor="@color/bluedarker"
+        tc:strokeWidth="5dp"/>
+
+    <TextView
+        android:id="@+id/avalid_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rgk_text_size_medium"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

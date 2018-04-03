@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rgk_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/bluedarker"
+        android:orientation="horizontal"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart">
+
+        <ImageView
+            android:id="@+id/iv_traffic_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/rgk_list_item_padding_left"
+            android:text="@string/clean_ram_new"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/rgk_text_size_medium" />
+
+        <ImageView
+            android:id="@+id/toolbar_set"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/rl_toolbar"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clean_phone" />
+
+        <TextView
+            android:id="@+id/tv_clean_raminfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_clean"
+            android:layout_marginLeft="15dp"
+            android:textColor="#8affffff"
+            android:textSize="@dimen/rgk_text_size_medium" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/clean_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:text="@string/clean_phone"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/rgk_text_size_medium" />
+
+    <TextView
+        android:id="@+id/clean_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clean_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/try_recommend"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/rgk_text_size_medium" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/clean_recommend"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/rgk_text_padding"
+        android:paddingRight="@dimen/rgk_text_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_uninstall"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_unintall_app" />
+
+            <TextView
+                android:id="@+id/tv_uninstall_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/iv_uninstall"
+                android:paddingLeft="@dimen/rgk_text_padding"
+                android:text="@string/uninstall_app"
+                android:textSize="@dimen/rgk_text_size_medium" />
+
+
+            <TextView
+                android:id="@+id/tv_uninstall_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_uninstall_title"
+                android:layout_toRightOf="@id/iv_uninstall"
+                android:ellipsize="marquee"
+                android:paddingLeft="@dimen/rgk_text_padding"
+                android:singleLine="true"
+                android:text="@string/uninstall_app_hint"
+                android:textColor="#80000000"
+                android:textSize="@dimen/rgk_text_size_small" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_light" />
+
+        <TextView
+            android:id="@+id/tv_uninstall_app_go"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/uninstall_app_go"
+            android:textColor="@color/bluedarker"
+            android:textSize="@dimen/rgk_text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_light" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

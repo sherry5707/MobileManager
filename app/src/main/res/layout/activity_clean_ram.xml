@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rubbish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.qingcheng.mobilemanager.ui.activity.TaskCleanActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_task_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rgk_title_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/bluedarker"
+            android:orientation="horizontal"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart">
+
+            <ImageView
+                android:id="@+id/iv_traffic_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/ic_back_white" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="@dimen/rgk_list_item_padding_left"
+                android:text="@string/clean_ram_new"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/rgk_text_size_medium" />
+
+            <ImageView
+                android:id="@+id/toolbar_set"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/setting" />
+        </LinearLayout>
+
+        <com.qingcheng.mobilemanager.widget.NestedScrollParentLayout
+            android:id="@+id/nestedscroll_parentlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/kill_all"
+            android:layout_below="@id/rl_toolbar">
+
+            <RelativeLayout
+                android:id="@+id/title_container"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/bluedarker">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/ram_to_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/ram_measure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/ram_to_clear"
+                        android:text="@string/traffic_mb"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/rgk_text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/ram_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ram_measure"
+                        android:layout_toRightOf="@id/ram_to_clear"
+                        android:text="@string/ram_released"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/rgk_text_size_medium" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/ram_useinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#8affffff"
+                    android:textSize="@dimen/rgk_text_size_medium" />
+
+            </RelativeLayout>
+
+            <com.qingcheng.mobilemanager.widget.NestedListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_container"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart" />
+
+        </com.qingcheng.mobilemanager.widget.NestedScrollParentLayout>
+
+        <include layout="@layout/loading_container" />
+
+        <!--<include layout="@layout/rgk_list_divider" />-->
+
+        <TextView
+            android:id="@+id/kill_all"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rgk_bottom_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_clear_ram"
+            android:gravity="center"
+            android:text="@string/kill_all_process"
+            android:textAppearance="@style/RGK.BottomButton"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_kill_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluedarker">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+        <!--cleaning animation -->
+
+
+        <ImageView
+            android:id="@+id/iv_rocket"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_rocket"
+            android:src="@drawable/little_rocket" />
+
+
+        <TextView
+            android:id="@+id/tv_rocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="@string/speed_mobile"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/rgk_text_size_medium" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

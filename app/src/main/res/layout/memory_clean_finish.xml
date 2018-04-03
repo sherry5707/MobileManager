@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rgk_title_height"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart">
+
+        <ImageView
+            android:id="@+id/iv_traffic_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/rgk_list_item_padding_left"
+            android:text="@string/clean_ram_new"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/rgk_text_size_medium" />
+
+        <ImageView
+            android:id="@+id/toolbar_set"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/rl_toolbar"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_speed_boost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/speed_measure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_speed_boost"
+            android:text="@string/percent"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/rgk_text_size_medium" />
+
+        <TextView
+            android:id="@+id/speed_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speed_measure"
+            android:layout_toRightOf="@id/tv_speed_boost"
+            android:text="@string/speed_boost"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/rgk_text_size_medium" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/clear_rubbish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:text="@string/clear_rubbish"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/rgk_text_size_medium" />
+
+
+    <TextView
+        android:id="@+id/speed_useinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clear_rubbish"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="#8affffff"
+        android:textSize="@dimen/rgk_text_size_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/speed_useinfo"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/rgk_text_padding"
+        android:paddingRight="@dimen/rgk_text_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_uninstall"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_unintall_app" />
+
+            <TextView
+                android:id="@+id/tv_uninstall_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/iv_uninstall"
+                android:paddingLeft="@dimen/rgk_text_padding"
+                android:text="@string/uninstall_app"
+                android:textSize="@dimen/rgk_text_size_medium" />
+
+
+            <TextView
+                android:id="@+id/tv_uninstall_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_uninstall_title"
+                android:layout_toRightOf="@id/iv_uninstall"
+                android:ellipsize="marquee"
+                android:paddingLeft="@dimen/rgk_text_padding"
+                android:singleLine="true"
+                android:text="@string/uninstall_app_hint"
+                android:textColor="#80000000"
+                android:textSize="@dimen/rgk_text_size_small" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_light" />
+
+        <TextView
+            android:id="@+id/tv_uninstall_app_go"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/uninstall_app_go"
+            android:textColor="@color/bluedarker"
+            android:textSize="@dimen/rgk_text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_light" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

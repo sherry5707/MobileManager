@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="@style/RGK.AppCompatTheme.NoActionBar">
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorPrimary">@color/colorAccent</item>
+        <item name="android:colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="PermissionTheme" parent="@style/RGK.AppCompatTheme">
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/primary</item>-->
+        <!--<item name="colorPrimaryDark">@color/primary_dark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="common_divider_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/rgk_list_divider_height</item>
+        <item name="android:background">@color/rgk_divider</item>
+    </style>
+    <!-- Scrollbar style OUTSIDE_OVERLAY -->
+    <integer name="preference_scrollbar_style">33554432</integer>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="NewPermissionManagerActivityTheme" parent="AppTheme">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+</resources>

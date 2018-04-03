@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/newhomeactivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="14dp">
+
+        <com.qingcheng.mobilemanager.ui.activity.ExpandableGridView
+            android:id="@+id/topgridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:verticalSpacing="15dp"></com.qingcheng.mobilemanager.ui.activity.ExpandableGridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topgridview"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/moresetting"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <com.qingcheng.mobilemanager.ui.activity.ExpandableGridView
+                android:id="@+id/middlegridview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="5dp"
+                android:horizontalSpacing="4dp"
+                android:numColumns="3"
+                android:verticalSpacing="15dp"></com.qingcheng.mobilemanager.ui.activity.ExpandableGridView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,95 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.0
+TARGET_PRODUCT=full_v55303
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-3.2.0-32-generic-x86_64-with-Ubuntu-14.04-trusty
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NRD90M
+OUT_DIR=out
+============================================
+make: Entering directory `/home/public6/workspace/MyUI60/alps'
+echo '// +build ignore' > out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/version.cc
+echo >> out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/version.cc
+echo 'const char* kGitVersion = "e89081cc9e46449dfcddf8ef586530b50859de3d";' >> out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/version.cc
+prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++   -fno-exceptions -Wno-multichar -m64 -Wa,--noexecstack -fPIC -no-canonical-prefixes -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fstack-protector -D__STDC_FORMAT_MACROS -D__STDC_CONSTANT_MACROS -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -O2 -g -fno-strict-aliasing -DNDEBUG -UDEBUG  -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument   --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 -fstack-protector-strong    --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 --sysroot prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot -target x86_64-linux-gnu   -Wsign-promo  -Wno-inconsistent-missing-override   --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 --sysroot prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8 -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8/x86_64-linux -isystem prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/include/c++/4.8/backward -target x86_64-linux-gnu -c -std=c++11 -g -W -Wall -MMD -MP -O -DNOLOG -o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/version.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/version.cc
+prebuilts/clang/host/linux-x86/clang-2690385/bin/clang++   -m64 -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--no-undefined-version    --gcc-toolchain=prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8 --sysroot prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/sysroot -Bprebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/bin -Bprebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/lib/gcc/x86_64-linux/4.8 -Lprebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/lib/gcc/x86_64-linux/4.8 -Lprebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8/x86_64-linux/lib64/ -target x86_64-linux-gnu -static -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -ldl -std=c++11 -g -W -Wall -MMD -MP -O -DNOLOG -o out/host/linux-x86/bin/ckati out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/affinity.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/command.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/dep.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/eval.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/exec.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/expr.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/file.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/file_cache.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/fileutil.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/find.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/flags.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/func.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/io.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/log.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/main.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/ninja.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/parser.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/regen.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/rule.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/stats.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/stmt.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/string_piece.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/stringprintf.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/strutil.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/symtab.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/thread_pool.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/timeutil.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/var.o out/host/linux-x86/obj/EXECUTABLES/ckati_intermediates/version.o -lrt -lpthread
+sem_open.c:333: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+Running kati to generate build-7624ba06864de2e254ee5c1e32a2ca2e.ninja...
+/home/public6/workspace/MyUI60/alps/out/host/linux-x86/bin/ckati was modified, regenerating...
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.0
+TARGET_PRODUCT=full_v55303
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-3.2.0-32-generic-x86_64-with-Ubuntu-14.04-trusty
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NRD90M
+OUT_DIR=out
+============================================
+PRODUCT_COPY_FILES frameworks/base/data/sounds/effects/ogg/camera_click.ogg:system/media/audio/ui/camera_click.ogg ignored.
+PRODUCT_COPY_FILES device/mediatek/mt6735/thermal.conf:system/vendor/etc/.tp/thermal.conf:mtk ignored.
+PRODUCT_COPY_FILES device/mediatek/mt6735/ht120.mtc:system/vendor/etc/.tp/.ht120.mtc:mtk ignored.
+PRODUCT_COPY_FILES device/mediatek/mt6735/media_codecs.xml:system/etc/media_codecs.xml:mtk ignored.
+PRODUCT_COPY_FILES device/mediatek/mt6735/media_codecs_performance.xml:system/etc/media_codecs_performance.xml:mtk ignored.
+PRODUCT_COPY_FILES device/mediatek/mt6735/media_codecs_mediatek_audio_phone.xml:system/etc/media_codecs_mediatek_audio.xml:mtk ignored.
+PRODUCT_COPY_FILES device/mediatek/mt6735/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml:mtk ignored.
+PRODUCT_COPY_FILES device/mediatek/mt6735/mtk_omx_core.cfg:system/vendor/etc/mtk_omx_core.cfg:mtk ignored.
+No private recovery resources for TARGET_DEVICE v55303
+DUMP_RELEASE_INFO start
+1486732159
+1486732159
+DUMP_RELEASE_INFO end
+Starting build with ninja
+ninja: Entering directory `.'
+[ 10% 1/10] Ensure Jack server is installed and started
+Jack server already installed in "/home/public6/.jack-server"
+Server is already running
+[ 20% 2/10] target R.java/Manifest.java: MobileManager (out/target/common/obj/APPS/MobileManager_intermediates/src/R.stamp)
+[ 30% 3/10] Building with Jack: out/target/common/obj/APPS/MobileManager_intermediates/with-local/classes.dex
+[ 40% 4/10] target Java: MobileManager (out/target/common/obj/APPS/MobileManager_intermediates/classes)
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+[ 50% 5/10] Copying: out/target/common/obj/APPS/MobileManager_intermediates/classes-jarjar.jar
+[ 60% 6/10] Copying: out/target/common/obj/APPS/MobileManager_intermediates/classes.jar
+[ 70% 7/10] build out/target/product/v55303/system/app/MobileManager/MobileManager.mpinfo
+[MPlugin] Create MPINFO: out/target/product/v55303/system/app/MobileManager/MobileManager.mpinfo
+[MPlugin] Source deps: file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/core-junit_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/core-libart_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/core-oj_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/ext_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/mediatek-common_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/okhttp_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/org.apache.http.legacy_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/telephony-common_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/core-lambda-stubs_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/risenumber-mobile_intermediates/javalib.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/android-support-v4_intermediates/javalib.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/JAVA_LIBRARIES/android-support-v7-appcompat_intermediates/javalib.jar file:/home/public6/workspace/MyUI60/alps/out/target/common/obj/APPS/MobileManager_intermediates/classes.jar file:/home/public6/workspace/MyUI60/alps/out/target/product/v55303/system/app/MobileManager/MobileManager.mpinfo 
+[MPlugin] Source JAR: out/target/common/obj/APPS/MobileManager_intermediates/classes.jar
+[MPlugin] mpinfo -------------
+[MPlugin] Complete !! 
+[ 80% 8/10] Copying: out/target/common/obj/APPS/MobileManager_intermediates/classes.dex
+[ 90% 9/10] target Package: MobileManager (out/target/product/v55303/obj/APPS/MobileManager_intermediates/package.apk)
+[100% 10/10] Install: out/target/product/v55303/system/app/MobileManager/MobileManager.apk
+make: Leaving directory `/home/public6/workspace/MyUI60/alps'
+
+#### make completed successfully (01:33 (mm:ss)) ####
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rgk_title_height"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@color/bluedarker">
+
+        <ImageView
+            android:id="@+id/iv_traffic_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:src="@drawable/ic_back_white"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/rgk_list_item_padding_left"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/rgk_text_size_medium" />
+
+        <TextView
+            android:id="@+id/toolbar_all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/check_all"
+            android:textColor="#ffffff"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+</LinearLayout>
